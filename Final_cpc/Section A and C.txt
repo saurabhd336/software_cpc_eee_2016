@@ -1,0 +1,16 @@
+Section A
+5) D) Mergesort
+(insertion and selection are O(n^2) worst case and quick sort is also O(n^2) worst case (analyze for sorted input) )
+
+6) Use divide and conquer math formulation
+	T(n) = T(n/2) + C
+	Expant it recursively to get
+	T(n) = T(n/(2^k)) + k*C
+	Using the fact that T(1) = some constant val 'C1', let (n/(2^k)) = 1 => k = log2(n)
+	T(n) = T(1) + log2(n) * C = C1 + log2(n) * C
+	Therefore TC is O(log(n))
+7) Talk about dijkstra's shortest path algo (Read online)
+
+Section C
+4) Friend function
+5) Else the constructor will recursively keep calling itself till memeory overflow
